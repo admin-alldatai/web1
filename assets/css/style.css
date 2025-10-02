@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fc;
+  color: #222;
+}
+header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+.logo {
+  height: 40px;
+}
+nav a {
+  margin-left: 24px;
+  color: #005aaf;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.hero {
+  background: linear-gradient(90deg, #005aaf 70%, #0082d1 100%);
+  color: #fff;
+  padding: 64px 0 48px 0;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.6em;
+  margin-bottom: 0.5em;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+}
+.cta-btn {
+  padding: 12px 32px;
+  background: #fff;
+  color: #005aaf;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.cta-btn:hover {
+  background: #e4f0fa;
+}
+.about {
+  padding: 48px 0;
+  background: #fff;
+}
+.about h2 {
+  margin-bottom: 0.6em;
+}
+.dashboard {
+  padding: 48px 0;
+}
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  padding: 28px 36px;
+  min-width: 220px;
+  max-width: 260px;
+  text-align: center;
+}
+.card h2 {
+  margin-bottom: 8px;
+  color: #005aaf;
+}
+.card .value {
+  font-size: 2.2em;
+  margin: 12px 0 8px 0;
+  color: #333;
+}
+.card img {
+  height: 46px;
+  margin-top: 14px;
+}
+.privacy {
+  padding: 60px 0;
+  background: #fff;
+}
+.privacy h1 {
+  margin-bottom: 24px;
+}
+footer {
+  background: #003a6f;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 32px;
+}
+footer a {
+  color: #fff;
+  margin-left: 16px;
+  font-size: 0.98em;
+  text-decoration: underline;
+}
+@media (max-width: 800px) {
+  .dashboard-cards {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  header .container {
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 12px;
+  }
+}
